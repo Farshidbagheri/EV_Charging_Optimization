@@ -1,0 +1,28 @@
+{
+    "observation_space": {
+        "shape": [
+            5
+        ],
+        "features": [
+            "queue_length",
+            "available_stations",
+            "current_load",
+            "electricity_price",
+            "time_of_day"
+        ]
+    },
+    "evaluation": {
+        "mean_reward": 44.45695652173913,
+        "std_reward": 12.270868949007038,
+        "mean_completion_time": 16.60780312441182,
+        "std_completion_time": 0.8967980434119973,
+        "mean_queue_length": 5.156521739130435,
+        "std_queue_length": 1.5312991630161834,
+        "mean_grid_load": 812.6086956521738,
+        "std_grid_load": 35.863635873567446,
+        "mean_price": 0.7016521739130437,
+        "std_price": 0.007172727174713475,
+        "completion_rate": 0.7033413306196955,
+        "std_completion_rate": 0.14124943785807886
+    }
+}

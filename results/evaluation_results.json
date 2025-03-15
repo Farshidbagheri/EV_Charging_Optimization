@@ -1,0 +1,84 @@
+[
+  {
+    "session_id": 0,
+    "evaluation": {
+      "normal": {
+        "mean_reward": 1933.8094221910935,
+        "std_reward": 200.34829132178854,
+        "mean_length": 23.0,
+        "mean_queue_length": 4.260869565217392,
+        "mean_grid_load": 760.3672793313339,
+        "mean_price": 0.6912038906488754,
+        "mean_completion_rate": 1.4173913043478261
+      },
+      "high_load": {
+        "mean_reward": 1613.2624522108397,
+        "std_reward": 200.84380808831023,
+        "mean_length": 23.0,
+        "mean_queue_length": 7.556521739130434,
+        "mean_grid_load": 771.2713832759121,
+        "mean_price": 0.7787198755472297,
+        "mean_completion_rate": 1.4695652173913043
+      },
+      "off_peak": {
+        "mean_reward": 1525.8632827285244,
+        "std_reward": 326.1426883887548,
+        "mean_length": 23.0,
+        "mean_queue_length": 1.660869565217391,
+        "mean_grid_load": 688.293396888312,
+        "mean_price": 0.541431291328217,
+        "mean_completion_rate": 0.9739130434782608
+      },
+      "unpredictable": {
+        "mean_reward": 2012.072009309446,
+        "std_reward": 231.08911634473745,
+        "mean_length": 23.0,
+        "mean_queue_length": 5.634782608695653,
+        "mean_grid_load": 765.8490521739529,
+        "mean_price": 0.7428818396453256,
+        "mean_completion_rate": 1.5565217391304347
+      }
+    }
+  },
+  {
+    "session_id": 1,
+    "evaluation": {
+      "normal": {
+        "mean_reward": 1615.3216450389223,
+        "std_reward": 327.11832720929203,
+        "mean_length": 23.0,
+        "mean_queue_length": 3.9652173913043485,
+        "mean_grid_load": 717.5328695898597,
+        "mean_price": 0.6826370087005806,
+        "mean_completion_rate": 1.2086956521739132
+      },
+      "high_load": {
+        "mean_reward": 1280.8795488685475,
+        "std_reward": 419.2487275224087,
+        "mean_length": 23.0,
+        "mean_queue_length": 9.443478260869565,
+        "mean_grid_load": 760.8948937559392,
+        "mean_price": 0.7779467691353795,
+        "mean_completion_rate": 1.4000000000000001
+      },
+      "off_peak": {
+        "mean_reward": 1401.0554938471455,
+        "std_reward": 187.88777218997978,
+        "mean_length": 23.0,
+        "mean_queue_length": 1.8347826086956522,
+        "mean_grid_load": 664.5818688592225,
+        "mean_price": 0.5376374468435626,
+        "mean_completion_rate": 0.9130434782608695
+      },
+      "unpredictable": {
+        "mean_reward": 1480.2092574109652,
+        "std_reward": 393.2698239964159,
+        "mean_length": 23.0,
+        "mean_queue_length": 8.191304347826087,
+        "mean_grid_load": 754.3001803448544,
+        "mean_price": 0.7411556825506068,
+        "mean_completion_rate": 1.4260869565217391
+      }
+    }
+  }
+]
