@@ -114,6 +114,6 @@ This project was developed by Farshid Bagheri Saravi. When using or referencing 
 @software{ev_charging_optimization,
   author = {Bagheri Saravi, Farshid},
   title = {EV Charging Optimization System},
-  year = {2024},
+  year = {2025},
   url = {https://github.com/Farshidbagheri/EV_Charging_Optimization}
 } 
