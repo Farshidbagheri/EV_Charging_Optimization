@@ -1,0 +1,44 @@
+# Repository Configuration
+
+# Repository Topics
+topics:
+  - reinforcement-learning
+  - ev-charging
+  - smart-grid
+  - ai-optimization
+  - machine-learning
+  - sustainable-energy
+  - python
+  - deep-learning
+  - smart-cities
+  - energy-optimization
+
+# Enable Discussions
+features:
+  discussions: true
+
+# Discussion Categories
+discussion_categories:
+  - name: Announcements
+    description: Important updates and announcements
+  - name: Ideas
+    description: Share ideas for new features and improvements
+  - name: Q&A
+    description: Ask questions and get help
+  - name: Show and Tell
+    description: Share your implementations and use cases
+
+# Labels
+labels:
+  - name: enhancement
+    color: '84b6eb'
+    description: New feature or enhancement
+  - name: bug
+    color: 'd73a4a'
+    description: Something isn't working
+  - name: documentation
+    color: '0075ca'
+    description: Documentation improvements
+  - name: help wanted
+    color: '008672'
+    description: Extra attention is needed 
