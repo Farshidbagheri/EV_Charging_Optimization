@@ -123,7 +123,15 @@ EV_Charging_Optimization/
    - Revenue analysis
    - Cost efficiency metrics
 
-## License
+## 👨‍💻 Developer
+
+**Farshid Bagheri Saravi**
+- 💼 Machine Learning Engineer
+- 📊 Data Scientist
+- 🌐 [LinkedIn](https://www.linkedin.com/in/farshidbagherisaravi/)
+- 📧 [GitHub](https://github.com/Farshidbagheri)
+
+## 📄 License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
@@ -133,21 +141,15 @@ This software was originally developed by Farshid Bagheri Saravi
 (https://github.com/Farshidbagheri)
 ```
 
-## Developer
+## 📚 Citation
 
-**Farshid Bagheri Saravi**
-- Lead Developer & System Architect
-- Machine Learning Engineer
-- Contact: [GitHub Profile](https://github.com/Farshidbagheri)
+If you use this software in your research, please cite:
 
-## Citation
-
-If you use this software in your research, please cite it as:
 ```bibtex
 @software{ev_charging_optimization,
   author = {Bagheri Saravi, Farshid},
   title = {EV Charging Optimization System},
-  year = {2024},
+  year = {2025},
   url = {https://github.com/Farshidbagheri/EV_Charging_Optimization}
 }
 ```
