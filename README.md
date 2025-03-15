@@ -2,28 +2,40 @@
 
 Advanced electric vehicle charging management system using reinforcement learning to optimize charging schedules and balance grid load.
 
+## Overview
+
+This project utilizes reinforcement learning (RL) for optimizing electric vehicle (EV) charging strategies, considering grid load, pricing, and dynamic demand. The system implements a custom Gym environment and uses state-of-the-art RL algorithms to manage charging schedules efficiently.
+
 ## Features
 
-- Intelligent charging station management
+### Core Functionality
+- Custom Gym environment for EV charging simulation
+- Load-based and time-based pricing integration
+- Optimized reinforcement learning agent
 - Real-time grid load balancing
 - Dynamic pricing optimization
 - Queue management system
-- Multi-station coordination
-- Performance monitoring
 
-## Key Results
+### Technical Implementation
+- Multi-station parallel processing
+- Custom reward shaping
+- State/action space optimization
+- Vectorized environment support
+- Comprehensive metrics tracking
 
-- Completion Rate: 70.33% ± 14.12%
-- Mean Queue Length: 5.16 ± 1.53 vehicles
-- Grid Load: 812.61 ± 35.86 kW
-- Electricity Price: 0.70 ± 0.007 units
-- Mean Reward: 44.46 ± 12.27
+## Performance Results
+
+- **Charging Efficiency**: 70.33% completion rate (±14.12%)
+- **Queue Management**: 5.16 average length (±1.53 vehicles)
+- **Grid Stability**: 812.61 kW average load (±35.86 kW)
+- **Price Optimization**: 0.70 average price unit (±0.007)
+- **System Performance**: 44.46 mean reward (±12.27)
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone https://github.com/Farshidbagheri/EV_Charging_Optimization.git
 cd EV_Charging_Optimization
 ```
 
@@ -41,25 +53,22 @@ pip install -r requirements.txt
 ## Usage
 
 ### Training
-
 ```bash
-python -m src.train
+python src/train.py
 ```
 
-This will:
-- Initialize the environment
-- Train the optimization agent
-- Save model checkpoints
-- Generate performance metrics
+The training process:
+- Initializes the custom Gym environment
+- Configures the RL agent with optimized parameters
+- Trains using parallel environment processing
+- Saves checkpoints and performance metrics
 
 ### Evaluation
-
 ```bash
-python -m src.evaluate
+python src/evaluate.py
 ```
 
 ## Project Structure
-
 ```
 EV_Charging_Optimization/
 │── src/                  # Source code directory
@@ -76,40 +85,54 @@ EV_Charging_Optimization/
 │── .gitignore          # Git ignore rules
 ```
 
-## Environment Configuration
+## Technical Details
 
-The charging environment includes:
-- 10 charging stations
-- Maximum queue: 20 vehicles
-- Dynamic arrival patterns
-- Variable charging rates (50 kW max)
+### Environment Configuration
+- Number of charging stations: 10
+- Queue capacity: 20 vehicles
+- Maximum charging rate: 50 kW per station
 - Base grid load: 500 kW
+- Dynamic arrival patterns based on time of day
+
+### Model Architecture
+- Policy network: MLP [512, 256]
+- Parallel environments: 8
+- Batch size: 512
+- Learning rate: 5e-4
+- Optimized hyperparameters for stability
 
 ## Performance Metrics
 
-1. Charging Completion Rate
-2. Queue Management
-3. Grid Load Balancing
-4. Price Optimization
-5. Waiting Time Analysis
+1. **Charging Efficiency**
+   - Session completion rate
+   - Average charging time
+   - Energy delivery rate
 
-## Model Architecture
+2. **Queue Management**
+   - Average wait times
+   - Queue length distribution
+   - Service rate analysis
 
-- Policy: MLP [512, 256]
-- Parallel processing (8 environments)
-- Batch size: 512
-- Learning rate: 5e-4
-- Optimized hyperparameters
+3. **Grid Impact**
+   - Load distribution
+   - Peak demand reduction
+   - Grid stability metrics
 
-## License
+4. **Economic Performance**
+   - Price optimization
+   - Revenue analysis
+   - Cost efficiency metrics
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Developer
 
-## Contributing
+**Farshid Bagheri Saravi**
+- Lead Developer & System Architect
+- Machine Learning Engineer
+- Contact: [GitHub Profile](https://github.com/Farshidbagheri)
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## Copyright
 
-## Contact
+Copyright © 2024 Farshid Bagheri Saravi. All rights reserved.
 
-For questions and feedback, please open an issue in the GitHub repository.
+This software and associated documentation files are proprietary and confidential.
 
