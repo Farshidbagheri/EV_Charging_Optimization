@@ -1,30 +1,30 @@
-# AI-Powered EV Charging Station Management
+# EV Charging Optimization System
 
-An intelligent system for managing electric vehicle charging stations using reinforcement learning to optimize charging schedules, reduce waiting times, and balance grid load.
+Advanced electric vehicle charging management system using reinforcement learning to optimize charging schedules and balance grid load.
 
-## 🚀 Features
+## Features
 
-- Reinforcement learning-based charging station management
+- Intelligent charging station management
 - Real-time grid load balancing
-- Dynamic pricing based on demand and time of day
-- Queue management optimization
-- Multi-station parallel charging coordination
-- Performance monitoring and visualization
+- Dynamic pricing optimization
+- Queue management system
+- Multi-station coordination
+- Performance monitoring
 
-## 📊 Key Results
+## Key Results
 
-- **Completion Rate**: 70.33% ± 14.12%
-- **Mean Queue Length**: 5.16 ± 1.53 vehicles
-- **Grid Load**: 812.61 ± 35.86 kW
-- **Electricity Price**: 0.70 ± 0.007 units
-- **Mean Reward**: 44.46 ± 12.27
+- Completion Rate: 70.33% ± 14.12%
+- Mean Queue Length: 5.16 ± 1.53 vehicles
+- Grid Load: 812.61 ± 35.86 kW
+- Electricity Price: 0.70 ± 0.007 units
+- Mean Reward: 44.46 ± 12.27
 
-## 🛠 Installation
+## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/AI_Electric_Vehicles.git
-cd AI_Electric_Vehicles
+git clone [repository-url]
+cd EV_Charging_Optimization
 ```
 
 2. Create a virtual environment:
@@ -38,84 +38,78 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 💻 Usage
+## Usage
 
-### Training the Model
+### Training
 
 ```bash
 python -m src.train
 ```
 
-The training script will:
-- Initialize the environment with optimized parameters
-- Train the PPO agent using parallel environments
-- Save the trained model and evaluation metrics
-- Generate performance visualizations
+This will:
+- Initialize the environment
+- Train the optimization agent
+- Save model checkpoints
+- Generate performance metrics
 
-### Evaluating the Model
+### Evaluation
 
 ```bash
 python -m src.evaluate
 ```
 
-## 🏗 Project Structure
+## Project Structure
 
 ```
-AI_Electric_Vehicles/
-├── src/
-│   ├── agents/
-│   │   └── ppo_agent.py
-│   ├── environment/
-│   │   └── ev_charging_env.py
-│   ├── train.py
-│   └── evaluate.py
-├── models/
-│   └── final_model.zip
-├── results/
-│   ├── evaluation_metrics.json
-│   └── training_evaluation.png
-├── logs/
-│   └── PPO_tensorboard_logs/
-├── requirements.txt
-└── README.md
+EV_Charging_Optimization/
+│── src/                  # Source code directory
+│   ├── env/             # Custom environment for charging stations
+│   ├── models/          # RL models and training scripts
+│   ├── data/            # Sample datasets
+│   ├── utils/           # Utility scripts
+│── results/             # Evaluation metrics and plots
+│── docs/                # Documentation files
+│── notebooks/           # Analysis notebooks
+│── README.md            # Project overview
+│── requirements.txt     # Dependencies
+│── LICENSE             # License information
+│── .gitignore          # Git ignore rules
 ```
 
-## 🔧 Environment Configuration
+## Environment Configuration
 
-The charging station environment (`EVChargingEnv`) simulates:
+The charging environment includes:
 - 10 charging stations
-- Maximum queue length of 20 vehicles
-- Dynamic arrival rates based on time of day
-- Variable charging rates up to 50 kW per station
-- Base grid load of 500 kW
+- Maximum queue: 20 vehicles
+- Dynamic arrival patterns
+- Variable charging rates (50 kW max)
+- Base grid load: 500 kW
 
-## 📈 Performance Metrics
+## Performance Metrics
 
-The system is evaluated on multiple metrics:
-1. **Charging Completion Rate**: Percentage of successfully completed charging sessions
-2. **Queue Management**: Average and maximum queue lengths
-3. **Grid Load Balancing**: Distribution and peaks of power consumption
-4. **Price Optimization**: Dynamic pricing effectiveness
-5. **Waiting Times**: Average and maximum waiting times for vehicles
+1. Charging Completion Rate
+2. Queue Management
+3. Grid Load Balancing
+4. Price Optimization
+5. Waiting Time Analysis
 
-## 🤖 Model Architecture
+## Model Architecture
 
-The PPO agent uses:
-- MLP Policy with [512, 256] units
-- Parallel environment processing (8 environments)
-- Batch size of 512 for optimal GPU utilization
-- Learning rate of 5e-4
-- Optimized hyperparameters for stable training
+- Policy: MLP [512, 256]
+- Parallel processing (8 environments)
+- Batch size: 512
+- Learning rate: 5e-4
+- Optimized hyperparameters
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📧 Contact
+## Contact
 
 For questions and feedback, please open an issue in the GitHub repository.
 
