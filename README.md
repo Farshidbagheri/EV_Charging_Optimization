@@ -264,6 +264,7 @@ EV_Charging_Optimization/
 - 📊 Data Scientist
 - 🌐 [LinkedIn](https://www.linkedin.com/in/farshidbagherisaravi/)
 - 📧 [GitHub](https://github.com/Farshidbagheri)
+- 🌐 [Website](https://www.farshidbagheri.com)
 
 ## 📄 License
 
